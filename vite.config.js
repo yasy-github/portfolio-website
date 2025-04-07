@@ -8,5 +8,5 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
-  base: "https://yasy-github.github.io/portfolio-website/",
+  base: "/portfolio-website/",
 })
