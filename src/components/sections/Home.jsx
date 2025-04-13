@@ -1,7 +1,7 @@
 import { RevealOnScroll } from "../RevealOnScroll"
+import { Slider } from "../Slider.jsx";
 
 export const Home = () => {
-
     return (
         <section id="home" className="min-h-screen flex items-center justify-center relative">
             <RevealOnScroll>
@@ -26,6 +26,9 @@ export const Home = () => {
                             Contact Me
                         </a>
                     </div>
+
+                    {/* TODO: invisible `Slider` in landscape view when height is less than 650px */}
+                    <Slider />
                 </div>
             </RevealOnScroll>
         </section>
