@@ -49,3 +49,13 @@ html, body {
     opacity: 1;
     transform: translateY(0);
 }
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-100px * 8)); }
+}
+
+.slide-track {
+    display: flex;
+    animation: scroll 10s linear infinite;
+}

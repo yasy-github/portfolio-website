@@ -1,4 +1,5 @@
 import { RevealOnScroll } from "../RevealOnScroll"
+import { Slider } from "../Slider.jsx";
 
 export const Home = () => {
 
@@ -26,6 +27,7 @@ export const Home = () => {
                             Contact Me
                         </a>
                     </div>
+                    <Slider />
                 </div>
             </RevealOnScroll>
         </section>
