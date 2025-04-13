@@ -12,33 +12,20 @@ let slides = [
 
 export const Slider = () => {
     return (
-        <div className="max-w-5xl mx-auto px-4 mt-50">
+        <div className="invisible md:visible max-w-5xl mx-auto px-4 mt-50">
             {/* <div class="flex items-center justify-center h-screen bg-gray-300"> */}
-                <div class="slider relative shadow-lg overflow-hidden w-[960px] h-[100px]">
-
-                    <div class="before:absolute before:content-[''] before:w-[100px] before:h-[250px] before:bg-gradient-to-r before:from-black before:to-transparent before:z-2 before:left-0 before:top-0
-                        after:absolute after:content-[''] after:w-[100px] after:h-[250px] after:bg-gradient-to-r after:from-black after:to-transparent after:z-2 after:right-0 after:top-0 after:rotate-180"
-                    />
-                    <div class="slide-track">
-                        {
-                            [...slides, ...slides].map((slide, index) => (
-                                <img src={slide.src} alt={slide.alt} height="250" width="100" className="mx-10"/>
-                            ))
-                        }
-                    </div>
+            <div class="slider relative shadow-lg overflow-hidden w-[960px] h-[100px]">
+                <div class="before:absolute before:content-[''] before:w-[100px] before:h-[250px] before:bg-gradient-to-r before:from-black before:to-transparent before:z-2 before:left-0 before:top-0
+                    after:absolute after:content-[''] after:w-[100px] after:h-[250px] after:bg-gradient-to-r after:from-black after:to-transparent after:z-2 after:right-0 after:top-0 after:rotate-180"
+                />
+                <div class="slide-track">
+                    {
+                        [...slides, ...slides].map((slide, index) => (
+                            <img src={slide.src} alt={slide.alt} height="250" width="100" className="mx-10"/>
+                        ))
+                    }
                 </div>
+            </div>
         </div>
-        
-        // <div class="slider">
-	    //     <div class="slide-track">
-        //         {
-        //             slides.map((src, index) => {
-        //                 <div className="slide">
-        //                     <img src={src} height="100" width="250" alt=""/>
-        //                 </div>
-        //             })
-        //         }
-        //     </div>
-        // </div>
     );
 };
